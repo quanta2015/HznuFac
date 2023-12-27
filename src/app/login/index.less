@@ -1,0 +1,190 @@
+@media screen and (min-width: 1000px) {
+
+  .g-login {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    width: 100%;
+    height: 100vh;
+    padding-top: 100px;
+    align-items: center;
+    font-family: "microsoft yahei";
+
+    .m-wrap {
+      width: 1000px;
+      height: 500px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+      display: flex;
+
+
+      .m-logo {
+        flex: 3;
+        color: var(--clr-main);
+        background: #f9f9f9;
+        padding: 30px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+
+        .m-pic {
+          flex: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          img {
+            width: 300px;
+            opacity: .08;
+          }
+
+        }
+
+        &>.m-title {
+          display: flex;
+
+
+          p {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            margin-left: 40px;
+          }
+
+          img {
+            height: 128px;
+            width: 128px;
+
+          }
+
+          span {
+            font-size: 24px;
+            margin-bottom: 5px;
+            color: var(--clr-main);
+          }
+
+          label {
+            font-size: 12px;
+            color: var(--clr-main);
+          }
+        }
+      }
+
+
+
+
+      .m-form {
+        flex: 2;
+        padding: 50px 30px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 4px;
+
+        &>label {
+          height: 100px;
+          font-size: 24px;
+          text-align: center;
+          color: var(--clr-main);
+        }
+
+        form {
+          width: 100%;
+        }
+
+        p {
+          flex: 1;
+        }
+
+        input {
+          padding-left: 40px;
+          background: #fff;
+        }
+
+        button {
+          height: 40px;
+          font-size: 16px;
+          background: var(--clr-main);
+          border: 1px solid var(--clr-main);
+        }
+      }
+
+
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 1000px) {
+
+  .g-login {
+    display: flex;
+    flex-direction: column;
+    color: #eee;
+    font-size: 12px;
+    background: #fff;
+    min-height: 100vh;
+
+    .m-login {
+
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+
+      .m-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 40px;
+
+        img {
+          display: none;
+        }
+
+        .m-title {
+          position: absolute;
+          top: 10px;
+          left: 20px;
+
+          label {
+            font-size: 45px;
+            color: #ff0000;
+          }
+
+          span {
+            font-size: 20px;
+            color: #666;
+          }
+        }
+      }
+
+
+      .m-form {
+        flex: 1;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        padding: 20px 30px;
+
+
+
+        form {
+          width: 100%;
+
+          .m-user-input {
+            imeMode: auto;
+          }
+
+          input,
+          button {
+            height: 45px !important;
+            font-size: 20px;
+          }
+
+        }
+      }
+    }
+  }
+
+}
