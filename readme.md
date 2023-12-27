@@ -1,2 +1,1 @@
-121.43.120.234
-2023-hznu-tlc
+hznu factory app
