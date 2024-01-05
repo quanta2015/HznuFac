@@ -1,0 +1,154 @@
+.menu {
+  width: var(--menu-width);
+  height: 45px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  background: #000;
+  align-self: center;
+  justify-content: space-between;
+
+  .logo {
+    height: 45px;
+    background: #ce121b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    padding: 0 10px;
+
+    img {
+      height: 24px;
+    }
+  }
+
+
+
+  .btn {
+    height: 45px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-sizing: border-box;
+    width: 45px;
+    position: relative;
+    margin: 0 10px 0 0;
+
+
+
+    img {
+      height: 100%;
+    }
+
+    .wrap {
+      padding: 20px 40px;
+      /* width: var(--menu-width); */
+      position: fixed;
+      background: rgba(0, 0, 0, 0.8);
+      box-sizing: border-box;
+      color: #fff;
+      font-size: 15px;
+      right: 10%;
+      top: 45px;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      cursor: default;
+      border-radius: 0 0 10px 10px;
+      left: 10%;
+      z-index: 999;
+      display: flex;
+
+      &:global(.show) {
+        opacity: 1;
+      }
+
+
+    }
+  }
+}
+
+
+
+.sect {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #aaa;
+  margin: 10px;
+  border-radius: 5px;
+
+  h1 {
+    font-size: 18px;
+    font-weight: 400;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 5px;
+  }
+}
+
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.item {
+  // width: 200px;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: .5s;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  margin: 5px;
+  font-size: 13px;
+
+
+  &:hover {
+    // box-shadow: 5px 5px 5px rgba(255, 255, 255, .05), -2px -2px 5px rgba(255, 255, 255, .05);
+    // border: 1px solid #eee;
+    background: #cc0000;
+    // color: #666;
+
+    // img {
+    //   border: 1px solid #666;
+    //   filter: var(--fil-grey);
+    // }
+  }
+
+  img {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #fff;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 3px;
+
+  }
+
+  span {
+    margin-left: 10px;
+  }
+}
+
+
+.show {
+  opacity: 1 !important;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .menu {
+    width: 100vw;
+    display: none;
+  }
+}

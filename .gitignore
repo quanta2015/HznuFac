@@ -1,8 +1,11 @@
 # dependencies
-/node_modules
-/build
+/mqtt/node_modules
 
 
+/site/build
+/site/node_modules
+/site/*.lock
+/site/package-lock.json
 
 # misc
 .DS_Store

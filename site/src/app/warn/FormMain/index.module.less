@@ -1,0 +1,47 @@
+:global {
+
+  .ant-space-item {
+    flex: 1;
+  }
+
+  .ant-space-item:last-child {
+    flex: unset;
+  }
+
+  .ant-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .ant-form-item {
+    width: calc(50% - 20px);
+  }
+
+  .ant-form-item:nth-child(2n) {
+    margin-left: 20px;
+  }
+}
+
+
+.form {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+
+
+  .wrap {
+    position: relative;
+    width: var(--pop-width);
+    background: #fff;
+    border-radius: 5px;
+    padding: 20px;
+  }
+}

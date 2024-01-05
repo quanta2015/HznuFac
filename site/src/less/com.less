@@ -1,0 +1,66 @@
+#root {
+  width: var(--sys-wid);
+  min-width: var(--sys-wid);
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+@media screen and (max-width: 768px) {
+  #root {
+    width: 100vw;
+  }
+}
+
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  position: relative;
+  background: #d6e0e0;
+  color: #333;
+  font-family: "microsoft yahei", "HiraKakuProN-W3", "Meiryo", sans-serif;
+  margin: 0;
+  -webkit-text-size-adjust: 100%;
+
+  &.fixed {
+    position: fixed;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+i {
+  font-style: normal;
+}
+
+p {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+
+.input {
+  height: 40px;
+}
+
+
+
+.highcharts-credits {
+  display: none !important;
+}
+
+
+
+
+
+@primary-color: #038fde;

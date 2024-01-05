@@ -1,0 +1,1 @@
+import * as mqtt from "mqtt"const dayjs = require("dayjs")export const SERVER = '121.43.120.234'export const PORT = 8080export const serverUrl = () => `ws://${SERVER}:${PORT}`export const SubRtg = (e) => `/edge/${e.key}/${e.sn}/rtg`export const cfList = [  { "key": "hznu", "sn": "test" },  { "key": "hznu", "sn": "test2" }]

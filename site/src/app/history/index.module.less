@@ -1,0 +1,59 @@
+.his {
+  height: calc(100vh - 61px);
+  background: #eee;
+}
+
+
+.fun {
+  display: flex;
+  height: 60px;
+  align-items: center;
+
+  .wrap {
+    flex: 1;
+    display: flex;
+    flex-direction: row-reverse;
+
+    span {
+      background: #336699;
+      height: 40px;
+      color: #fff;
+      width: 150px;
+      border-radius: 5px;
+      margin: 0 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 15px;
+      cursor: pointer;
+      transition: .3s;
+    }
+  }
+
+  i {
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    background: #fff;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+      opacity: .7;
+    }
+
+    &:global(.sel) {
+      background: #ff6600;
+      color: #fff;
+    }
+  }
+}
+
+.chart {
+  background: #333;
+  height: calc(100vh - 121px);
+}
